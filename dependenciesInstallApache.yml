@@ -16,13 +16,3 @@
     - libselinux-python-2.0.94-5.8.el6.x86_64.rpm
     - libselinux-utils-2.0.94-5.8.el6.x86_64.rpm
 
-  # - name: Install httpd RPM
-  #   yum: name=httpd
-
-  - name: Install httpd RPM
-    yum: state=present name=/root/{{ item }}
-    with_items:
-    - libselinux-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-devel-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-python-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-utils-2.0.94-5.8.el6.x86_64.rpm
