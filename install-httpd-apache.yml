@@ -16,10 +16,6 @@
     - mailcap-2.1.41-2.el7.noarch.rpm
     - httpd-tools-2.4.6-67.el7.centos.x86_64.rpm
     - apr-util-1.5.2-6.el7.x86_64.rpm
-    - libselinux-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-devel-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-python-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-utils-2.0.94-5.8.el6.x86_64.rpm
 
   # - name: Install httpd RPM
   #   yum: name=httpd
@@ -32,10 +28,6 @@
     - mailcap-2.1.41-2.el7.noarch.rpm
     - httpd-tools-2.4.6-67.el7.centos.x86_64.rpm
     - apr-util-1.5.2-6.el7.x86_64.rpm
-    - libselinux-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-devel-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-python-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-utils-2.0.94-5.8.el6.x86_64.rpm
 
   - name: start httpd service
     service: name=httpd state=started
