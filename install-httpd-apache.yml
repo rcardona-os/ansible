@@ -11,10 +11,6 @@
       src: rpms/{{ item }}
       dest: /root/
     with_items:
-    - libselinux-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-devel-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-python-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-utils-2.0.94-5.8.el6.x86_64.rpm
     - httpd-2.4.6-67.el7.centos.x86_64.rpm
     - apr-1.4.8-3.el7.x86_64.rpm
     - mailcap-2.1.41-2.el7.noarch.rpm
@@ -27,10 +23,6 @@
   - name: Install httpd RPM
     yum: state=present name=/root/{{ item }}
     with_items:
-    - libselinux-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-devel-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-python-2.0.94-5.8.el6.x86_64.rpm
-    - libselinux-utils-2.0.94-5.8.el6.x86_64.rpm
     - httpd-2.4.6-67.el7.centos.x86_64.rpm
     - apr-1.4.8-3.el7.x86_64.rpm
     - mailcap-2.1.41-2.el7.noarch.rpm
